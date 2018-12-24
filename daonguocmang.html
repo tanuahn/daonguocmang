@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var x = [-3,5,1,3,2,10];
+    reverse(x);
+    document.write(x);
+    
+    function reverse() {
+        var fist = 0;
+        var last = x.length - 1;
+        while (fist < last){
+            var b = x[fist];
+            x[fist] = x[last];
+            x[last] = b;
+            fist++;
+            last--;
+        }
+
+    }
+</script>
+</body>
+</html>
